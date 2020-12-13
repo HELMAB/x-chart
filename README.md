@@ -8,6 +8,12 @@ x-chart
 npm install @laramab/x-chart --save
 ```
 
+## Nuxtjs
+
+```cmd
+npm install vue-chartjs chart.js --save
+```
+
 Import the package into `main.js` file
 ```js
 import Vue from 'vue'
