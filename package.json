@@ -1,0 +1,24 @@
+{
+  "name": "x-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.9.4",
+    "vue-chartjs": "^3.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HELMAB/x-chart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HELMAB/x-chart/issues"
+  },
+  "homepage": "https://github.com/HELMAB/x-chart#README"
+}
