@@ -5,13 +5,13 @@ x-chart
 ## Installation
 
 ```cmd
-npm install x-chart --save
+npm install @laramab/x-chart --save
 ```
 
 Import the package into `main.js` file
 ```js
 import Vue from 'vue'
-import XChart from 'x-chart'
+import XChart from '@laramab/x-chart'
 
 Vue.use(XChart)
 ```

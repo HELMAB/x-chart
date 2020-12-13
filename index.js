@@ -8,9 +8,5 @@ export default {
     Vue.component('x-chart-bar', XChartBar)
     Vue.component('x-chart-line', XChartLine)
     Vue.component('x-chart-doughnut', XChartDoughnut)
-  },
-
-  getRandomInt () {
-
   }
 }
