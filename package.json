@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/HELMAB/x-chart/issues"
   },
-  "homepage": "https://github.com/HELMAB/x-chart#README"
+  "homepage": "https://github.com/HELMAB/x-chart#README",
+  "publishConfig": {
+    "access": "public"
+  }
 }
