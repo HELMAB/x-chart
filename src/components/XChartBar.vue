@@ -23,7 +23,7 @@ export default {
           datasets: [
             {
               label: 'Users',
-              backgroundColor: '#00c0ef',
+              backgroundColor: [],
               data: [
                 getRandomInt(),
                 getRandomInt(),
@@ -50,6 +50,23 @@ export default {
           responsive: true,
           maintainAspectRatio: false
         }
+      }
+    }
+  },
+  methods: {
+    getColors(number) {
+      let colors = []
+      for (let i = 0; i < number; i++) {
+        colors.push(`hsl(${Math.random() * 360}, 50%, 50%)`)
+      }
+      return colors
+    }
+  },
+  mounted() {
+    if (this.chartData && this.chartData.datasets) {
+      const numbers = parseInt(this.chartData.labels.length)
+      if (!(this.chartData.datasets[0].backgroundColor.length > 0)) {
+        this.chartData.datasets[0].backgroundColor = this.getColors(numbers)
       }
     }
   }
