@@ -44,7 +44,8 @@ export default {
           datasets: [
             {
               label: "Users",
-              backgroundColor: "#00a65a",
+              backgroundColor: "#dbf2f2",
+              borderColor: "#66c9c9",
               data: data(),
             },
           ],
@@ -57,6 +58,9 @@ export default {
         return {
           responsive: true,
           maintainAspectRatio: false,
+          legend: {
+            position: "bottom",
+          },
         };
       },
     },

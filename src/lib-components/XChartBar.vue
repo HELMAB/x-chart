@@ -18,14 +18,6 @@ export default {
           return Math.floor(Math.random() * (50 - 5 + 1)) + 5;
         };
 
-        const colors = () => {
-          let colors = [];
-          for (let i = 0; i < 12; i++) {
-            colors.push(`hsl(${Math.random() * 360}, 50%, 50%)`);
-          }
-          return colors;
-        };
-
         const data = () => {
           let _data = [];
           for (let i = 0; i < 12; i++) {
@@ -52,7 +44,9 @@ export default {
           datasets: [
             {
               label: "Users",
-              backgroundColor: colors(),
+              backgroundColor: "#ffecd9",
+              borderColor: "#ffad5c",
+              borderWidth: 1,
               data: data(),
             },
           ],
