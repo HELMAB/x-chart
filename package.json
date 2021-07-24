@@ -1,6 +1,6 @@
 {
   "name": "@laramab/x-chart",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple snippet vue-chartjs code base.",
   "main": "dist/x-chart.ssr.js",
   "browser": "dist/x-chart.esm.js",
