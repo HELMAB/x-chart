@@ -13,6 +13,8 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <x-chart-sample />
+    <x-chart-bar />
+    <x-chart-line />
+    <x-chart-doughnut />
   </div>
 </template>

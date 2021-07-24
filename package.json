@@ -1,19 +1,16 @@
 {
-  "name": "x-chart",
-  "version": "1.0.0",
-  "description": "",
-
+  "name": "@laramab/x-chart",
+  "version": "1.0.2",
+  "description": "A simple snippet vue-chartjs code base.",
   "main": "dist/x-chart.ssr.js",
   "browser": "dist/x-chart.esm.js",
   "module": "dist/x-chart.esm.js",
   "unpkg": "dist/x-chart.min.js",
-
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
   "sideEffects": false,
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "prebuild": "rimraf ./dist",
@@ -22,10 +19,18 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
+  "keywords": [
+    "vue",
+    "chartjs",
+    "vue-chartjs",
+    "line-chart",
+    "bar-chart",
+    "doughnut-chart"
+  ],
   "dependencies": {
+    "chart.js": "^2.9.4",
+    "vue-chartjs": "^3.5.1"
   },
-
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
@@ -50,5 +55,16 @@
   },
   "engines": {
     "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HELMAB/x-chart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HELMAB/x-chart/issues"
+  },
+  "homepage": "https://github.com/HELMAB/x-chart#README",
+  "publishConfig": {
+    "access": "public"
   }
 }
