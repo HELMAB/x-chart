@@ -42,3 +42,7 @@ export default {
 
 </style>
 ```
+
+### Plugins
+
+- ```chartjs-plugin-datalabels@1```

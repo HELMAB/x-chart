@@ -1,14 +1,9 @@
 <script>
-import Vue from 'vue';
-// Uncomment import and local "components" registration if library is not registered globally.
-// import { XChartSample } from '@/entry.esm';
+import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'ServeDev',
-  // components: {
-  //  XChartSample,
-  // }
-});
+  name: 'ServeDev'
+})
 </script>
 
 <template>

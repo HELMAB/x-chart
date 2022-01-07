@@ -1,5 +1,14 @@
 <template>
-  <x-line :options="options" :chart-data="chartData" />
+  <x-line
+      :chart-id="chartId"
+      :options="options"
+      :chart-data="chartData"
+      :width="width"
+      :height="height"
+      :css-classes="cssClasses"
+      :styles="styles"
+      :plugins="plugins"
+  />
 </template>
 
 <script>
@@ -63,6 +72,31 @@ export default {
           },
         };
       },
+    },
+    chartId: {
+      type: String,
+      required: true
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    },
+    cssClasses: {
+      type: String,
+      default: ''
+    },
+    styles: {
+      type: Object
+    },
+    plugins: {
+      type: Array,
+      default() {
+        return []
+      }
     },
   },
 };

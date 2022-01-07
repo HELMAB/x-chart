@@ -1,9 +1,18 @@
 <template>
-  <x-bar :options="options" :chart-data="chartData" />
+  <x-bar
+      :chart-id="chartId"
+      :options="options"
+      :chart-data="chartData"
+      :width="width"
+      :height="height"
+      :css-classes="cssClasses"
+      :styles="styles"
+      :plugins="plugins"
+  />
 </template>
 
 <script>
-import XBar from "./charts/XBar";
+import XBar from "./charts/XBar"
 
 export default {
   name: "XChartBar",
@@ -61,12 +70,37 @@ export default {
           maintainAspectRatio: false,
           legend: {
             position: "bottom",
-          },
+          }
         };
       },
     },
+    chartId: {
+      type: String,
+      required: true
+    },
+    width: {
+      default: 400,
+      type: Number
+    },
+    height: {
+      default: 400,
+      type: Number
+    },
+    cssClasses: {
+      type: String,
+      default: ''
+    },
+    styles: {
+      type: Object
+    },
+    plugins: {
+      type: Array,
+      default() {
+        return []
+      }
+    },
   },
-};
+}
 </script>
 
 <style scoped>
